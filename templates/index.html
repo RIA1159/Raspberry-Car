@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+    <title>raspberry car</title>
+    <link rel="stylesheet" href='../static/style.css'/>
+<!--    <script src="../static/style.js"></script>-->
+</head>
+<body>
+<div class="monitor">
+
+    <div class="Video"><img src="{{ url_for('video_feed') }}" style="height:100%" ></div>
+    <div>
+        <div class="text1">
+            <a style="font-family: '等线';font-size:2vw;">控制云台角度</a>
+        </div>
+        <div class="panup"><a href="/panup">
+            <img src="../static/front.png" style="width:100%"/></a></div>
+        <div class="pandown"><a href="/pandown">
+            <img src="../static/back.png" style="width:100%"/></a></div>
+        <div class="panleft"><a href="/panleft">
+            <img src="../static/left.png" style="width:100%"/></a></div>
+        <div class="panright"><a href="/panright">
+            <img src="../static/right.png" style="width:100%"/></a></div>
+        <div class="panpause"><a href="/panpause">
+            <img src="../static/pause.png" style="width:100%"/></a></div>
+        <div class="startre"><a href="/startre">
+            <img src="../static/startrecognition.png" style="width:100%"/></a></div>
+        <div class="stopre"><a href="/stopre">
+            <img src="../static/stoprecognition.png" style="width:100%"/></a></div>
+        <div class="Auto"><a href="/autonomy">
+            <img src="../static/auto.png" style="width:100%"/></a></div>
+    </div>
+</div>
+<hr>
+
+
+<div class="wheel" >
+    <div class="front"><a href="/forward">
+        <img src="../static/front.png" style="width:100%"/></a></div>
+    <div class="back"><a href="/backward">
+        <img src="../static/back.png" style="width:100%"/></a></div>
+    <div class="left"><a href="/left">
+        <img src="../static/left.png" style="width:100%"/></a></div>
+    <div class="right"><a href="/right">
+        <img src="../static/right.png" style="width:100%"/></a></div>
+    <div class="pause"><a href="/panpause">
+        <img src="../static/pause.png" style="width:100%"/></a></div>
+    <div class="logo">
+        <img src="../static/logo.png" style="width:100%"/></div>
+    <div class="text2">
+        <a style="font-family: '等线';font-size:2vw;">控制小车方向</a>
+    </div>
+</div>
+</body>
+</html>
